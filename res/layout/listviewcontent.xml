@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_x_15"
+        android:background="#ffffff" >
+
+        <TextView
+            android:id="@+id/tv_numbel"
+            android:layout_width="@dimen/layout_x_90"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/layout_x_3"
+            android:layout_marginLeft="@dimen/layout_x_20"
+            android:text="8"
+            android:textColor="#000000"
+            android:textSize="@dimen/layout_x_27" />
+
+        <TextView
+            android:id="@+id/tv_listcontent1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_numbel"
+            android:text="@string/orderNo"
+            android:textColor="#000000"
+            android:textSize="@dimen/layout_x_21" />
+
+        <TextView
+            android:id="@+id/tv_listcontent2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_listcontent1"
+            android:layout_marginLeft="@dimen/layout_x_12"
+            android:layout_toRightOf="@id/tv_listcontent1"
+            android:text="¥014"
+            android:textColor="#000000"
+            android:textSize="@dimen/layout_x_21" />
+
+        <TextView
+            android:id="@+id/tv_listcontent5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_listcontent1"
+            android:layout_below="@id/tv_listcontent1"
+            android:text="@string/totalprice"
+            android:textColor="#000000"
+            android:textSize="@dimen/layout_x_21" />
+
+        <TextView
+            android:id="@+id/tv_listcontent6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_listcontent5"
+            android:layout_marginLeft="@dimen/layout_x_12"
+            android:layout_toRightOf="@id/tv_listcontent5"
+            android:text="1014"
+            android:textColor="#000000"
+            android:textSize="@dimen/layout_x_21" />
+
+        <TextView
+            android:id="@+id/tv_listcontent3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_listcontent1"
+            android:layout_below="@id/tv_listcontent5"
+            android:paddingBottom="@dimen/layout_x_3"
+            android:text="@string/ordertime"
+            android:textColor="#000000"
+            android:textSize="@dimen/layout_x_21" />
+
+        <TextView
+            android:id="@+id/tv_listcontent4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_listcontent3"
+            android:layout_below="@id/tv_listcontent5"
+            android:layout_marginLeft="@dimen/layout_x_12"
+            android:layout_toRightOf="@id/tv_listcontent3"
+            android:text="2014"
+            android:textColor="#000000"
+            android:textSize="@dimen/layout_x_21" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_listcontent3"
+            android:layout_below="@id/tv_listcontent3"
+            android:paddingBottom="@dimen/layout_x_3"
+            android:text="@string/phone"
+            android:textColor="#000000"
+            android:textSize="@dimen/layout_x_21" />
+
+        <TextView
+            android:id="@+id/tv_phones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_phone"
+            android:layout_below="@id/tv_listcontent3"
+            android:layout_marginLeft="@dimen/layout_x_12"
+            android:layout_toRightOf="@id/tv_phone"
+            android:text="13339898935"
+            android:textColor="#000000"
+            android:textSize="@dimen/layout_x_21" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zrh.urestaurantprivate.view.MenuCategoryTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_hor"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" 
+    android:paddingLeft="@dimen/layout_x_33"
+    android:paddingRight="@dimen/layout_x_33"
+    android:textSize="@dimen/layout_x_27"
+    android:gravity="center"
+    >
+</com.zrh.urestaurantprivate.view.MenuCategoryTextView>

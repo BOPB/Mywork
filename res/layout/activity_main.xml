@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".TableInfoActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rl_table_order"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_x_66"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title" >
+
+        <TextView
+            android:id="@+id/tab3refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/layout_x_27"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/tab3refresh"
+            android:textSize="@dimen/layout_x_27" 
+            android:textColor="@drawable/btn_color"/>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/tab3text"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/layout_x_27" />
+
+        <TextView
+            android:id="@+id/tab3choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/layout_x_27"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/tab3choose"
+            android:textSize="@dimen/layout_x_27"
+            android:textColor="@drawable/btn_color" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rllt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_x_75"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_apart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/layout_x_15"
+            android:layout_marginLeft="@dimen/layout_x_15"
+            android:layout_marginRight="@dimen/layout_x_8"
+            android:layout_marginTop="@dimen/layout_x_15"
+            android:layout_weight="1.0"
+            android:background="#ff7300"
+            android:gravity="center"
+            android:text="@string/ApartString"
+            android:textColor="@drawable/btn_color"
+            android:textSize="@dimen/layout_x_30" />
+
+        <Button
+            android:id="@+id/btn_opera"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/layout_x_15"
+            android:layout_marginLeft="@dimen/layout_x_8"
+            android:layout_marginRight="@dimen/layout_x_8"
+            android:layout_marginTop="@dimen/layout_x_15"
+            android:layout_weight="1.0"
+            android:background="#ff7300"
+            android:gravity="center"
+            android:text="@string/OperaString"
+            android:textColor="@drawable/btn_color"
+            android:textSize="@dimen/layout_x_30" />
+
+        <Button
+            android:id="@+id/btn_meger"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/layout_x_15"
+            android:layout_marginLeft="@dimen/layout_x_8"
+            android:layout_marginRight="@dimen/layout_x_15"
+            android:layout_marginTop="@dimen/layout_x_15"
+            android:layout_weight="1.0"
+            android:background="#ff7300"
+            android:gravity="center"
+            android:text="@string/MegerString"
+            android:textColor="@drawable/btn_color"
+            android:textSize="@dimen/layout_x_30" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_click_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rllt"
+        android:layout_below="@id/rl_table_order"
+        android:layout_centerInParent="true"
+        android:src="@drawable/biz_pic_empty_view"
+        android:visibility="gone" />
+
+    <GridView
+        android:id="@+id/gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rllt"
+        android:layout_below="@id/rl_table_order"
+        android:listSelector="@null"
+        android:numColumns="2"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/layout_x_2" />
+
+</RelativeLayout>

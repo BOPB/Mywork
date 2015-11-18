@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/layout_y_90"
+    android:background="#ffffff"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/usetv"
+        android:layout_width="@dimen/layout_x_180"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/layout_x_33"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="123456cascxaxaxaA7"
+        android:textColor="#000000"
+        android:textSize="@dimen/layout_x_24" />
+
+    <TextView
+        android:id="@+id/ornum"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/layout_x_9"
+        android:layout_marginRight="@dimen/layout_x_3"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="数量"
+        android:textColor="#000000"
+        android:textSize="@dimen/layout_x_24" />
+    
+    <TextView
+        android:id="@+id/ormoney"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/layout_x_5"
+        android:layout_weight="0.5"
+        android:layout_gravity="right"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="金钱"
+        android:textColor="#000000"
+        android:textSize="@dimen/layout_x_24" />
+
+    
+
+    <Button
+        android:id="@+id/dele"
+        android:layout_width="@dimen/layout_x_84"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="@dimen/layout_x_6"
+        android:layout_marginLeft="@dimen/layout_x_9"
+        android:layout_marginRight="@dimen/layout_x_15"
+        android:layout_marginTop="@dimen/layout_x_6"
+        android:background="@drawable/del"
+        android:paddingBottom="@dimen/layout_x_7"
+        android:paddingLeft="@dimen/layout_x_7"
+        android:paddingTop="@dimen/layout_x_7"
+        android:singleLine="true"
+        android:text="@string/delete"
+        android:textColor="#000000"
+        android:textSize="@dimen/layout_x_21" />
+
+</LinearLayout>

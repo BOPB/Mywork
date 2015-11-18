@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_table_order"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_x_66"
+        android:background="@drawable/title" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/ntab2text"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/layout_x_27" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_ordermanage_prepare"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_x_75"
+        android:layout_marginBottom="@dimen/layout_x_7"
+        android:layout_marginLeft="@dimen/layout_x_15"
+        android:layout_marginRight="@dimen/layout_x_15"
+        android:layout_marginTop="@dimen/layout_x_15"
+        android:background="@drawable/my_item_selector" >
+
+        <TextView
+            android:id="@+id/prepare_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/layout_x_15"
+            android:text="@string/preparestring"
+            android:textColor="#000000"
+            android:textSize="@dimen/layout_x_27"
+            android:typeface="sans" />
+
+        <ImageView
+            android:layout_width="@dimen/layout_x_45"
+            android:layout_height="@dimen/layout_x_60"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/layout_x_15"
+            android:src="@drawable/rightpicture" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_ordermanage_deal"
+       android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_x_75"
+        android:layout_marginBottom="@dimen/layout_x_7"
+        android:layout_marginLeft="@dimen/layout_x_15"
+        android:layout_marginRight="@dimen/layout_x_15"
+        android:layout_marginTop="@dimen/layout_x_15"
+        android:background="@drawable/my_item_selector" >
+
+        <TextView
+            android:id="@+id/deal_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/layout_x_15"
+            android:text="@string/doorder"
+            android:textColor="#000000"
+            android:textSize="@dimen/layout_x_27"
+            android:typeface="sans" />
+
+        <ImageView
+            android:layout_width="@dimen/layout_x_45"
+            android:layout_height="@dimen/layout_x_60"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/layout_x_15"
+            android:src="@drawable/rightpicture" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_ordermanage_exception"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_x_75"
+        android:layout_marginBottom="@dimen/layout_x_7"
+        android:layout_marginLeft="@dimen/layout_x_15"
+        android:layout_marginRight="@dimen/layout_x_15"
+        android:layout_marginTop="@dimen/layout_x_15"
+        android:background="@drawable/my_item_selector" >
+
+        <TextView
+            android:id="@+id/exception_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/layout_x_15"
+            android:text="@string/exceptionorder"
+            android:textColor="#000000"
+            android:textSize="@dimen/layout_x_27"
+            android:typeface="sans" />
+
+        <ImageView
+            android:layout_width="@dimen/layout_x_45"
+            android:layout_height="@dimen/layout_x_60"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/layout_x_15"
+            android:src="@drawable/rightpicture" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_ordermanage_history"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_x_75"
+        android:layout_marginBottom="@dimen/layout_x_7"
+        android:layout_marginLeft="@dimen/layout_x_15"
+        android:layout_marginRight="@dimen/layout_x_15"
+        android:layout_marginTop="@dimen/layout_x_15"
+        android:background="@drawable/my_item_selector" >
+
+        <TextView
+            android:id="@+id/history_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/layout_x_15"
+            android:text="@string/historyorder"
+            android:textColor="#000000"
+            android:textSize="@dimen/layout_x_27"
+            android:typeface="sans" />
+
+        <ImageView
+            android:layout_width="@dimen/layout_x_45"
+            android:layout_height="@dimen/layout_x_60"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/layout_x_15"
+            android:src="@drawable/rightpicture" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_ordermanage_refresh"
+       android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_x_75"
+        android:layout_marginBottom="@dimen/layout_x_7"
+        android:layout_marginLeft="@dimen/layout_x_15"
+        android:layout_marginRight="@dimen/layout_x_15"
+        android:layout_marginTop="@dimen/layout_x_15"
+        android:background="@drawable/my_item_selector" >
+
+        <TextView
+            android:id="@+id/refresh_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/layout_x_15"
+            android:text="@string/refresh_menu"
+            android:textColor="#000000"
+            android:textSize="@dimen/layout_x_27"
+            android:typeface="sans" />
+
+        <ImageView
+            android:layout_width="@dimen/layout_x_45"
+            android:layout_height="@dimen/layout_x_60"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/layout_x_15"
+            android:src="@drawable/rightpicture" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_ordermanage_about"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_x_75"
+        android:layout_marginBottom="@dimen/layout_x_7"
+        android:layout_marginLeft="@dimen/layout_x_15"
+        android:layout_marginRight="@dimen/layout_x_15"
+        android:layout_marginTop="@dimen/layout_x_15"
+        android:background="@drawable/my_item_selector" >
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/layout_x_15"
+            android:text="@string/about"
+            android:textColor="#000000"
+            android:textSize="@dimen/layout_x_27"
+            android:typeface="sans" />
+
+        <ImageView
+            android:layout_width="@dimen/layout_x_45"
+            android:layout_height="@dimen/layout_x_60"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/layout_x_15"
+            android:src="@drawable/rightpicture" />
+    </RelativeLayout>
+
+</LinearLayout>

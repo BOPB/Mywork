@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/clocktitle"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/layout_x_66"
+        android:background="@drawable/title"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/detail_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/layout_x_15"
+            android:background="@drawable/selector_btn_back"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="返回"
+            android:textColor="@drawable/btn_color"
+            android:textSize="@dimen/layout_x_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="详细说明"
+            android:textColor="@color/white"
+            android:textSize="@dimen/layout_x_27" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_x_60"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_x_21"
+            android:layout_marginTop="@dimen/layout_x_9"
+            android:gravity="center_vertical"
+            android:text="名称"
+            android:textColor="@color/black"
+            android:textSize="@dimen/layout_x_24" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/layout_x_21"
+            android:layout_marginTop="@dimen/layout_x_9"
+            android:gravity="center_vertical|right"
+            android:text="名称"
+            android:textColor="@color/black"
+            android:textSize="@dimen/layout_x_24" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/layout_x_3"
+        android:background="@drawable/shape_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_x_60"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_x_21"
+            android:layout_marginTop="@dimen/layout_x_15"
+            android:gravity="center_vertical"
+            android:text="@string/price"
+            android:textColor="@color/black"
+            android:textSize="@dimen/layout_x_24" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/layout_x_21"
+            android:layout_marginTop="@dimen/layout_x_15"
+            android:gravity="center_vertical|right"
+            android:text="@string/price"
+            android:textColor="@color/black"
+            android:textSize="@dimen/layout_x_24" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/layout_x_3"
+        android:background="@drawable/shape_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_x_60"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_x_21"
+            android:layout_marginTop="@dimen/layout_x_9"
+            android:text="@string/zhekou"
+            android:textColor="@color/black"
+            android:textSize="@dimen/layout_x_24" />
+
+        <TextView
+            android:id="@+id/zhekou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/layout_x_21"
+            android:layout_marginTop="@dimen/layout_x_9"
+            android:gravity="center_vertical|right"
+            android:text="@string/zhekou"
+            android:textColor="@color/black"
+            android:textSize="@dimen/layout_x_24" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/layout_x_3"
+        android:visibility="gone"
+        android:background="@drawable/shape_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_x_60"
+        android:focusable="true"  
+        android:visibility="gone"
+  		android:focusableInTouchMode="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/layout_x_21"
+            android:text="@string/num"
+            android:textColor="@color/black"
+            android:textSize="@dimen/layout_x_24" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/layout_x_9"
+            android:layout_weight="0.2"
+            android:textSize="@dimen/layout_x_24" />
+
+        <ImageView
+            android:id="@+id/sub"
+            android:layout_width="@dimen/layout_x_60"
+            android:layout_height="@dimen/layout_x_60"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="@dimen/layout_x_9"
+            android:background="@drawable/btn_minus_disabled" />
+
+        <EditText
+            android:id="@+id/num"
+            android:layout_width="@dimen/layout_x_120"
+            android:layout_height="@dimen/layout_x_60"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/layout_x_7"
+            android:background="@drawable/detail_edittext"
+            android:gravity="center"
+            android:inputType="number"
+            android:padding="@dimen/layout_x_7"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/layout_x_24" />
+
+        <ImageView
+            android:id="@+id/add"
+            android:layout_width="@dimen/layout_x_60"
+            android:layout_height="@dimen/layout_x_60"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="@dimen/layout_x_7"
+            android:background="@drawable/imageview_add_bg" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/layout_x_3"
+        android:visibility="gone"
+        android:background="@drawable/shape_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_x_60"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_x_21"
+            android:layout_marginTop="@dimen/layout_x_9"
+            android:gravity="center_vertical"
+            android:text="@string/total_price"
+            android:textColor="@color/black"
+            android:textSize="@dimen/layout_x_24" />
+
+        <TextView
+            android:id="@+id/total_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/layout_x_9"
+            android:layout_marginTop="@dimen/layout_x_9"
+            android:gravity="center_vertical|right"
+            android:text="总价"
+            android:textColor="@color/black"
+            android:textSize="@dimen/layout_x_24" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/layout_x_3"
+        android:background="@drawable/shape_line" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/layout_x_66"
+        android:layout_marginLeft="@dimen/layout_x_21"
+        android:gravity="center_vertical"
+        android:text="@string/detail_msg"
+        android:textColor="@color/black"
+        android:textSize="@dimen/layout_x_24" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/detail_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_x_21"
+            android:layout_marginRight="@dimen/layout_x_21"
+            android:autoLink="phone|web|email"
+            android:background="@drawable/bg_edittext"
+            android:layout_gravity="center_horizontal"
+            android:gravity="top"
+            android:padding="@dimen/layout_x_9"
+            android:text="好味道你来品尝。。。 thryhjrykjuky7liuluilfdrtregsdvsdefejutyu,m"
+            android:textColor="@color/black"
+            android:textSize="@dimen/layout_x_24" />
+        
+    </ScrollView>
+
+    <Button
+        android:id="@+id/rush_purchase"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/layout_x_60"
+        android:layout_marginTop="@dimen/layout_x_9"
+        android:layout_marginBottom="@dimen/layout_x_9"
+        android:layout_marginLeft="@dimen/layout_x_9"
+        android:layout_marginRight="@dimen/layout_x_9"
+        android:background="@drawable/login_button_bg"
+        android:text="@string/rush_purchase"
+        android:textColor="@color/button_text"
+        android:visibility="gone"
+        android:textSize="@dimen/layout_x_36" />
+
+</LinearLayout>

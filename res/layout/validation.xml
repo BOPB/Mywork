@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/valitation" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/layout_x_120" >
+
+                <EditText
+                    android:id="@+id/et_validation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_x_60"
+                    android:layout_marginRight="@dimen/layout_x_60"
+                    android:background="@drawable/linearlayout_border"
+                    android:hint="请输入授权码"
+                    android:paddingBottom="@dimen/layout_x_27"
+                    android:paddingLeft="@dimen/layout_x_7"
+                    android:paddingTop="@dimen/layout_x_27"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/layout_x_39" />
+
+                <EditText
+                    android:id="@+id/et_goodsNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_x_60"
+                    android:layout_marginRight="@dimen/layout_x_60"
+                    android:layout_marginTop="@dimen/layout_x_45"
+                    android:background="@drawable/linearlayout_border"
+                    android:hint="请输入商家号"
+                    android:paddingBottom="@dimen/layout_x_27"
+                    android:paddingLeft="@dimen/layout_x_7"
+                    android:paddingTop="@dimen/layout_x_27"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/layout_x_39" />
+
+                <LinearLayout
+                    android:id="@+id/ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_x_60"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btn_cancel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_x_60"
+                        android:layout_weight="1"
+                        android:background="#ff7300"
+                        android:paddingBottom="@dimen/layout_x_27"
+                        android:paddingTop="@dimen/layout_x_27"
+                        android:text="退出"
+                        android:textColor="@drawable/btn_color"
+                        android:textSize="@dimen/layout_x_39" />
+
+                    <Button
+                        android:id="@+id/btn_sure"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_x_30"
+                        android:layout_marginRight="@dimen/layout_x_60"
+                        android:layout_weight="1"
+                        android:background="#ff7300"
+                        android:paddingBottom="@dimen/layout_x_27"
+                        android:paddingTop="@dimen/layout_x_27"
+                        android:text="确定"
+                        android:textColor="@drawable/btn_color"
+                        android:textSize="@dimen/layout_x_39" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

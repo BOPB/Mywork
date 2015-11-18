@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_x_66"
+        android:background="@drawable/title" >
+
+        <Button
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/layout_x_15"
+            android:background="@drawable/selector_btn_back"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/list_back"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/layout_x_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="订单确认"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/layout_x_27" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_x_20"
+        android:padding="@dimen/layout_x_15"
+        android:text="注：请仔细核对菜品及数量"
+        android:textColor="#ff0000"
+        android:textSize="@dimen/layout_x_27" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/layout_x_20"
+        android:layout_marginRight="@dimen/layout_x_20"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/order_sure_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/mLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:padding="@dimen/layout_x_9"
+                        android:text="订单金额："
+                        android:textColor="#000000"
+                        android:textSize="@dimen/layout_x_24" />
+
+                    <TextView
+                        android:id="@+id/total_money"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="left"
+                        android:paddingTop="@dimen/layout_x_9"
+                        android:text="12"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/layout_x_24" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_x_30"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:padding="@dimen/layout_x_9"
+                        android:text="服务员号："
+                        android:textColor="#000000"
+                        android:textSize="@dimen/layout_x_24" />
+
+                    <EditText
+                        android:id="@+id/fuwuyuan_id"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:digits="0123456789,qwertzuiopasdfghjklyxcvbnm,QWERTYUIOPASDFGHJKLZXCVBNM,_"
+                        android:hint="请输入服务员号"
+                        android:inputType="text"
+                        android:padding="@dimen/layout_x_9"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/layout_x_24" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:padding="@dimen/layout_x_9"
+                        android:text="手机号："
+                        android:textColor="#000000"
+                        android:textSize="@dimen/layout_x_24" />
+
+                    <EditText
+                        android:id="@+id/phone"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:hint="请输入手机号码"
+                        android:inputType="phone"
+                        android:maxLength="11"
+                        android:maxLines="1"
+                        android:padding="@dimen/layout_x_9"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/layout_x_24" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:padding="@dimen/layout_x_9"
+                        android:text="备注："
+                        android:textColor="#000000"
+                        android:textSize="@dimen/layout_x_24" />
+
+                    <EditText
+                        android:id="@+id/beizhu"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="top"
+                        android:hint="请输入要填写的备注信息"
+                        android:inputType="textMultiLine"
+                        android:lines="4"
+                        android:padding="@dimen/layout_x_9"
+                        android:singleLine="false"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/layout_x_24" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/order_sure"
+                    android:layout_width="@dimen/layout_x_270"
+                    android:layout_height="@dimen/layout_x_57"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/layout_x_10"
+                    android:layout_marginTop="@dimen/layout_x_15"
+                    android:background="@drawable/title"
+                    android:gravity="center"
+                    android:text="确 定"
+                    android:textColor="@drawable/btn_color"
+                    android:textSize="@dimen/layout_x_33" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>
